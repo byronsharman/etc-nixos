@@ -23,6 +23,18 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
+  hardware.bluetooth = {
+    enable = true;
+    powerOnBoot = false;
+  };
+
+  hardware.graphics = {
+    enable = true;
+    extraPackages = with pkgs; [
+      intel-media-driver
+    ];
+  };
+
   # Set your time zone.
   time.timeZone = "America/Denver";
 
@@ -101,11 +113,6 @@
   #   enable = true;
   #   enableSSHSupport = true;
   # };
-
-  hardware.bluetooth = {
-    enable = true;
-    powerOnBoot = false;
-  };
 
   systemd.tmpfiles.rules = [
     "Z /sys/class/powercap/intel-rapl:0/energy_uj 0444 root root - -"
