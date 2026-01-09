@@ -97,6 +97,8 @@
     dankMaterialShell.greeter = {
       enable = true;
       compositor.name = "niri";
+      # TODO: is there a way to avoid hardcoding this?
+      configHome = "/home/byron";
     };
     fish.enable = true;
     niri.enable = true;
