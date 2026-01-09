@@ -65,13 +65,14 @@
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
 
+  fonts.packages = with pkgs; [ adwaita-fonts ];
+
   environment.pathsToLink = [ "/share/applications" "/share/xdg-desktop-portal" ];
 
   # List packages installed in system profile. To search, run:
   # $ nix search wget
   environment.systemPackages = with pkgs; [
     adwaita-icon-theme
-    adwaita-fonts
     bat
     btop
     fd
