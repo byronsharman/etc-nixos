@@ -113,7 +113,9 @@
   #   enableSSHSupport = true;
   # };
 
-  # List services that you want to enable:
+  systemd.tmpfiles.rules = [
+    "Z /sys/class/powercap/intel-rapl:0/energy_uj 0444 root root - -"
+  ];
 
   services.pipewire = {
     enable = true;
