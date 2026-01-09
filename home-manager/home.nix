@@ -87,14 +87,6 @@
       };
     };
 
-    keepassxc = {
-      enable = true;
-      settings = {
-        Browser.Enabled = true;
-        SSHAgent.Enabled = true;
-      };
-    };
-
     ssh = {
       enable = true;
       # disable deprecated default config
