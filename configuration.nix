@@ -117,17 +117,18 @@
     "Z /sys/class/powercap/intel-rapl:0/energy_uj 0444 root root - -"
   ];
 
-  services.pipewire = {
-    enable = true;
-    jack.enable = true;
-  };
   # used by pipewire to get realtime priority
   security.rtkit.enable = true;
 
-  # Enable the OpenSSH daemon.
-  services.openssh.enable = true;
-
-  services.upower.enable = true;
+  services = {
+    pipewire = {
+      enable = true;
+      jack.enable = true;
+    };
+    power-profiles-daemon.enable = true;
+    openssh.enable = true;
+    upower.enable = true;
+  };
 
   # Open ports in the firewall.
   # networking.firewall.allowedTCPPorts = [ ... ];
