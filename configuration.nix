@@ -96,7 +96,6 @@
     ripgrep
     tree
     unzip
-    uv
     vim
     wl-clipboard
     xwayland-satellite
