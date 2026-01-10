@@ -73,6 +73,7 @@
       # enabling it manually allows me to disable Alt-C
       # see https://github.com/junegunn/fzf/issues/1238
       enableZshIntegration = false;
+      defaultOptions = [ "--height 5" "--style minimal" "--reverse" ];
     };
 
     git = {

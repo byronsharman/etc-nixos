@@ -22,7 +22,6 @@ function jmp
 end
 
 set PATH $PATH /home/byron/.cargo/bin /home/byron/.go/bin
-fzf --fish | source
 
 
 
