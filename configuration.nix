@@ -54,6 +54,7 @@
 
   i18n.extraLocaleSettings = {
     LC_ADDRESS = "en_US.UTF-8";
+    LC_COLLATE = "C.UTF-8"; # prevents `ls -a` from sorting files starting with . weirdly
     LC_IDENTIFICATION = "en_US.UTF-8";
     LC_MEASUREMENT = "en_US.UTF-8";
     LC_MONETARY = "en_US.UTF-8";
