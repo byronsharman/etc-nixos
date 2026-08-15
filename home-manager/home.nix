@@ -142,5 +142,14 @@
       createDirectories = true;
       setSessionVariables = true;
     };
+    # thing that's supposed to make Discord launch as a Wayland app by default
+    # created by Google Search AI, so I'm skeptical
+    desktopEntries.discord = {
+      name = "Discord";
+      exec = "discord --enable-features=UseOzonePlatform --ozone-platform=wayland %U";
+      icon = "discord";
+      type = "Application";
+      categories = [ "Network" "InstantMessaging" "Chat" ];
+    };
   };
 }
