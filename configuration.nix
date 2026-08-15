@@ -160,6 +160,8 @@
     "application/pdf" = "org.gnome.Papers.desktop";
     "image/*" = "org.gnome.Loupe.desktop";
     "text/html" = "firefox.desktop";
+    "x-scheme-handler/http" = "firefox.desktop";
+    "x-scheme-handler/https" = "firefox.desktop";
   };
 
   # Some programs need SUID wrappers, can be configured further or are
