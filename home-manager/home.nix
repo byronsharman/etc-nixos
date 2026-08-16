@@ -23,7 +23,6 @@
     bat
     numbat
     qbittorrent
-    thunderbird
     typst
 
     gnupg
