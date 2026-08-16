@@ -8,4 +8,5 @@ pkgs: with pkgs; [
   svelte-language-server
   tailwindcss-language-server
   tinymist
+  typstyle
 ]
